@@ -27,6 +27,8 @@ function clearGame() {
     document.querySelector('#name-1').innerHTML = ('player 2');
     document.querySelector('.player-0-panel').classList.add('active');
     document.querySelector('.player-1-panel').classList.remove('active');
+    document.querySelector('.player-0-panel').classList.remove('winner');
+    document.querySelector('.player-1-panel').classList.remove('winner');
     document.querySelector('#current-0').textContent = '0';
     document.querySelector('#current-1').textContent = '0';
     document.querySelector('#score-0').textContent = '0';

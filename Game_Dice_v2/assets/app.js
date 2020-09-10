@@ -35,6 +35,8 @@ function clearGame() {
     document.querySelector('#name-1').innerHTML = ('player 2');
     document.querySelector('.player-0-panel').classList.add('active');
     document.querySelector('.player-1-panel').classList.remove('active');
+    document.querySelector('.player-0-panel').classList.remove('winner');
+    document.querySelector('.player-1-panel').classList.remove('winner');
     document.querySelector('#current-0').textContent = '0';
     document.querySelector('#current-1').textContent = '0';
     document.querySelector('#score-0').textContent = '0';
@@ -42,6 +44,8 @@ function clearGame() {
     document.querySelector('#dice-0').style.display = 'none';
     document.querySelector('#dice-1').style.display = 'none';
     document.querySelector('.btn-submit').style.display = 'block';
+    document.querySelector('.btn-hold').style.display = 'none';
+    document.querySelector('.btn-roll').style.display = 'none';
     activePlayer = 0;
     totalScore = [0, 0];
     roundScore = 0;

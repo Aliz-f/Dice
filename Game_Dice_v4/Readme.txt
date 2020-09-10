@@ -1,2 +1,5 @@
-1 dice with input from user
+1 dice
+input end points of the game from user
+
+
 
